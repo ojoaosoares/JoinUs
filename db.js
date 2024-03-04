@@ -1,11 +1,13 @@
+require("dotenv").config;
 let mysql = require('mysql2');
 
+
 let connection = mysql.createConnection({
-    host: 'roundhouse.proxy.rlwy.net',
-    user: 'root',
-    password: 'BdEf2Ah12c422D2fGcbfEaHEh2ggfd-a',
-    port: 29563,
-    database: 'railway'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT,
+    database: process.env.DB_NAME 
 });
 
 module.exports = connection;
