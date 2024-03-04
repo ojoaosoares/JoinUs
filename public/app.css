@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(66,69,86);
+    background-image: url('http://i.imgur.com/BJP2Q1j.jpg');
+    background-size: cover;
+    font-weight: 100;
+}
+
+.my-flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.my-container {
+    padding: 20px;
+}
+
+#main-title{
+    margin: 0;
+    font-size: 15em;
+    font-weight: 100;
+}
+  
+.lead {
+    margin: 0;
+    font-size: 3.2em;
+}
+
+.form {
+	line-height: 1.5;
+	border: none;
+	border-bottom: 3px solid #ebebeb;
+	margin-top: 100px;
+	width: 70%;
+	font-size: 2.9em;
+	color: white;
+	padding: 5px 10px;
+	background: transparent;
+}
+ 
+button {
+    line-height: 2.0;
+    border:3px solid white;
+    font-size: 1.9em;
+    color: rgb(66,69,86);
+    padding: 5px 30px;
+    background: rgba(255,255,255,1.0);
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255,255,255,0.8);
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+.modal-body {
+    text-align: left;
+}
+
+.modal-body p {
+    color: black;
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+@media (max-width:992px) {
+
+    #main-title{
+        font-size: 12em;
+    }
+
+    .lead {
+        font-size: 2.9em;
+    }
+
+    .form {
+        font-size: 2.5em;
+    }
+     
+    button {
+        font-size: 1.6em;
+    }
+}
+
+
+@media (max-width:767.98px) {
+    
+    #main-title{
+        font-size: 8em;
+    }
+
+    .lead {
+        font-size: 2em;
+    }
+
+    .form {
+        font-size: 2.2em;
+    }
+     
+    button {
+        font-size: 1.4em;
+    }
+
+
+}
+
+
+@media (max-width:576px) {
+
+    #main-title{
+        font-size: 6em;
+    }
+
+    .lead {
+        font-size: 1.5em;
+    }
+
+    .form {
+        font-size: 2em;
+    }
+     
+    button {
+        font-size: 1.2em;
+    }
+}
