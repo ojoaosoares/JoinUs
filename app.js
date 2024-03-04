@@ -9,9 +9,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 
 const baseUrl = "http://localhost:8080";
-const port = process.env.PORT || 8070;
+const port =  process.env.PORT || 8080;
 
-app.get(`${baseUrl}/`, (req, res) => {
+app.get("/", (req, res) => {
 
     let q = "SELECT COUNT(*) AS total FROM users";
 
@@ -24,7 +24,7 @@ app.get(`${baseUrl}/`, (req, res) => {
 
 });
 
-app.post(`${baseUrl}/register`, (req, res) => {
+app.post("/register", (req, res) => {
 
     let person = {
         email: req.body.email
@@ -35,13 +35,13 @@ app.post(`${baseUrl}/register`, (req, res) => {
         let erro, status;
 
         if (err)
-            res.redirect(`${baseUrl}/?erro=true&code=${err.errno}`);
+            res.redirect(`/?erro=true&code=${err.errno}`);
         else
-            res.redirect(`${baseUrl}/?erro=false`);
+            res.redirect(`/?erro=false`);
     })
 });
 
-app.listen(8080, () => {
-    console.log("Server running on 8080!");
+app.listen(port, () => {
+    console.log(`Server running on ${port}`);
 });
  
