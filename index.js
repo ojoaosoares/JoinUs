@@ -55,7 +55,7 @@ app.post("/register", (req, res) => {
                 }, 
 
                 tls : {
-                    rejectUnauthorized: true
+                    rejectUnAuthorized: true
                 }
             });
 
