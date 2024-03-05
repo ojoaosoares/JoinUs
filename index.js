@@ -53,7 +53,7 @@ app.post("/register", (req, res) => {
                     to: req.body.email, // receiver (use array of string for a list)
                     subject: 'Welcome', // Subject line
                     html: `<p>Hello</p>
-                    <p>Welcome to our cult, I say, group !!! We're thrilled to have you on board.</p>
+                    <p>Welcome to our cult, I mean, group !!! We're thrilled to have you on board.</p>
                     <p>Best regards</p>
                     <p>From our lovely secret leader</p>`
 
