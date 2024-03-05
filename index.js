@@ -51,7 +51,7 @@ app.post("/register", (req, res) => {
 
                 auth: { 
                     user: process.env.EMAIL_ADRESS, 
-                    pass: process.env.EMAIL_PASSWORD 
+                    password: process.env.EMAIL_PASSWORD 
                 }, 
 
                 tls : {
