@@ -42,6 +42,8 @@ app.post("/register", (req, res) => {
             
             let transporter = nodemailer.createTransport({ 
                 service: 'gmail', 
+                port: 587,
+                secure: true,
                 auth: { 
                 user: process.env.EMAIL_ADRESS, 
                 pass: process.env.EMAIL_PASSWORD 
