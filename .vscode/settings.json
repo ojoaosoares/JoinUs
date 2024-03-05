@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "roundhouse.proxy.rlwy.net",
+            "port": 29563,
+            "driver": "MySQL",
+            "name": "join_us",
+            "database": "railway",
+            "username": "root"
+        }
+    ]
+}

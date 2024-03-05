@@ -1,6 +1,7 @@
 let express = require('express');
 let bodyParser = require('body-parser');
 let connection = require('./db');
+var nodemailer = require("nodemailer");
 
 let app = express();
 
@@ -37,7 +38,34 @@ app.post("/register", (req, res) => {
         if (err)
             res.redirect(`/?erro=true&code=${err.errno}`);
         else
+        {
+            
+            let transporter = nodemailer.createTransport({ 
+                service: 'gmail', 
+                auth: { 
+                user: process.env.EMAIL_ADRESS, 
+                pass: process.env.EMAIL_PASSWORD 
+                } 
+            });
+
+                const mailOptions = {
+                    from: process.env.EMAIL_ADRESS, // sender address
+                    to: req.body.email, // receiver (use array of string for a list)
+                    subject: 'Welcome', // Subject line
+                    html: `<p>Hello</p>
+                    <p>Welcome to our cult, I say, group !!! We're thrilled to have you on board.</p>
+                    <p>Best regards</p>
+                    <p>From our lovely secret leader</p>`
+
+                };
+
+            transporter.sendMail(mailOptions, (err, info) => {
+                if(err)
+                  throw err
+             });
+
             res.redirect(`/?erro=false`);
+        }
     })
 });
 
