@@ -45,13 +45,11 @@ app.post("/register", (req, res) => {
                 host: 'smtp.gmail.com',
                 port: 465,
                 secure: true,
-                logger: true,
-                debug: true, 
                 secureConnection: false,
 
                 auth: { 
                     user: process.env.EMAIL_ADRESS, 
-                    password: process.env.EMAIL_PASSWORD 
+                    pass: process.env.EMAIL_PASSWORD 
                 }, 
 
                 tls : {
