@@ -27,7 +27,7 @@ You can access the hosted site on Railway through the following link:
 
 ## Contact
 
-- [Linkedin](http://www.linkedin.com/in/ojo%C3%A3osoares)
+- [Linkedin](http://www.linkedin.com/in/ojoaovsoares)
 
 # Contributions
 
