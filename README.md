@@ -4,7 +4,7 @@ Join Us is a simple web application designed to collect emails. It integrates wi
 
 You can access the hosted site on Railway through the following link:
 
-[joinus-production.up.railway.app]
+[joinus-production.up.railway.app](https://joinus.up.railway.app/)
 
 # Project Structure
 
