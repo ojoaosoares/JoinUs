@@ -31,7 +31,7 @@ body {
 
 #main-title{
     margin: 0;
-    font-size: 15em;
+    font-size: 14em;
     font-weight: 100;
 }
   
@@ -88,7 +88,7 @@ input[type=text]:focus {
     }
 
     .lead {
-        font-size: 2.9em;
+        font-size: 2.4em;
     }
 
     .form {
@@ -98,30 +98,36 @@ input[type=text]:focus {
     button {
         font-size: 1.6em;
     }
-}
 
+    .my-container input {
+        font-size: 2.4em;
+    }
+}
 
 @media (max-width:767.98px) {
     
     #main-title{
-        font-size: 8em;
+        font-size: 7em;
     }
 
     .lead {
-        font-size: 2em;
+        font-size: 1.7em;
     }
 
     .form {
         font-size: 2.2em;
+        width: 60%;
     }
      
     button {
         font-size: 1.4em;
     }
 
+    .my-container input {
+        font-size: 2em;
+    }
 
 }
-
 
 @media (max-width:576px) {
 
@@ -135,9 +141,14 @@ input[type=text]:focus {
 
     .form {
         font-size: 2em;
+        width: 50%;
     }
      
     button {
         font-size: 1.2em;
+    }
+
+    .my-container input {
+        font-size: 1.3em;
     }
 }
