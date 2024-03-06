@@ -9,7 +9,15 @@ You can access the hosted site on Railway through the following link:
 # Project Structure
 
 - The source code is organized in a main directory.
-- The application focuses on email collection and display of membership count.
+- Join Us is primarily focused on email collection and membership management.
+- The application heavily utilizes MySQL for storing and managing user data.
+
+# Features
+
+- Email Collection: Users can submit their email addresses through the Join Us website.
+- Validation: Join Us validates email addresses to ensure they are formatted correctly.
+- Deduplication: The application checks for duplicate email addresses to prevent multiple registrations.
+- Membership Count: Join Us utilizes MySQL with the COUNT function to display the total number of registered users.
 
 # Technologies Used
 
